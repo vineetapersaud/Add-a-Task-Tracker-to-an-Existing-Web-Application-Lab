@@ -7,14 +7,44 @@
     <title>My Website - Task Tracker</title>
 </head>
 <body>
+<nav>
+    <a href="tasks.html">Tasks</a>
+    </nav>
+
 
     <h1>My Website</h1>
-    <p>Welcome to my website!</p>
+   
+    
+    
+
+
+
+    
+
+
+<section id="task-tracker">
+    <h2>My Task Tracker</h2>
+    <p>Use this section to add and manage your tasks.</p>
 
     <section id="task-tracker">
-        <h2>My Task Tracker</h2>
-        <p>Use this section to add and manage your tasks.</p>
+    <h2>My Task Tracker</h2>
+    <p>Use this section to add and manage your tasks.</p>
 
+    <form id="task-form">
+        <label for="task-input">Enter a new task:</label>
+        <input
+            type="text"
+            id="task-input"
+            placeholder="Enter your task"
+            required
+        >
+        <button type="submit">Add Task</button>
+    </form>
+
+    <h3>My Tasks</h3>
+    <ul id="task-list"></ul>
+    <p id="message"></p>
+</section>
         <form id="task-form">
             <label for="task-input">Enter a new task:</label>
             <input
@@ -32,5 +62,8 @@
         <p id="message"></p>
     </section>
 
+    <script src="js/main.js" defer></script>
 </body>
 </html>
+
+<script src="js/main.js" defer></script>
