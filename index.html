@@ -5,65 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website - Task Tracker</title>
+    <link rel="stylesheet" href="js/css/styles.css">
 </head>
 <body>
-<nav>
-    <a href="tasks.html">Tasks</a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tasks.html">Tasks</a>
     </nav>
 
+    <main>
+        <h1>My Website</h1>
+        <p>Welcome to my website!</p>
 
-    <h1>My Website</h1>
-   
-    
-    
+        <!-- Task Tracker Feature -->
+        <section id="task-tracker">
+            <h2>My Task Tracker</h2>
+            <p>Use this section to add and manage your tasks.</p>
 
+            <form id="task-form">
+                <label for="task-input">Enter a new task:</label>
+                <input
+                    type="text"
+                    id="task-input"
+                    placeholder="Enter your task"
+                    maxlength="200"
+                    required
+                >
+                <button type="submit">Add Task</button>
+            </form>
 
+            <h3>My Tasks</h3>
+            <ul id="task-list"></ul>
 
-    
+            <p id="task-message" aria-live="polite"></p>
+        </section>
+        <!-- End Task Tracker Feature -->
+    </main>
 
-
-<section id="task-tracker">
-    <h2>My Task Tracker</h2>
-    <p>Use this section to add and manage your tasks.</p>
-
-    <section id="task-tracker">
-    <h2>My Task Tracker</h2>
-    <p>Use this section to add and manage your tasks.</p>
-
-    <form id="task-form">
-        <label for="task-input">Enter a new task:</label>
-        <input
-            type="text"
-            id="task-input"
-            placeholder="Enter your task"
-            required
-        >
-        <button type="submit">Add Task</button>
-    </form>
-
-    <h3>My Tasks</h3>
-    <ul id="task-list"></ul>
-    <p id="message"></p>
-</section>
-        <form id="task-form">
-            <label for="task-input">Enter a new task:</label>
-            <input
-                type="text"
-                id="task-input"
-                placeholder="Enter your task"
-                required
-            >
-            <button type="submit">Add Task</button>
-        </form>
-
-        <h3>My Tasks</h3>
-        <ul id="task-list"></ul>
-
-        <p id="message"></p>
-    </section>
-
-    <script src="js/main.js" defer></script>
+    <script src="js/main.js"></script> defer
 </body>
 </html>
-
-<script src="js/main.js" defer></script>
